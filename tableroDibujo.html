@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <title>Tablero de dibujo</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+        <center>
+      <div class="col-6">
+      <h4>Area de Dibujo</h4>
+      <canvas width="500" height="500" style="border: 1px solid black" id="area_de_dibujo"></canvas>
+    </div>
+  </center>
+  </div>
+    <div class="row p-2">
+      <div class="col-6">
+        <div class="form-group p-2 d-inline">
+          <select class="custom-select-sm" name="figurasVarias" id="figuras_V">
+            <option selected >Choose One!</option>
+            <option />Figura 1
+            <option />Figura 2
+            <option />Figura 3
+            <option />Figura 4
+            <option />Figura 5
+            <option />Figura 6
+            <option />Figura 7
+          </select>
+          <input class="btn btn-dark" type="button" value="Dibujar" id="boton_dibujar" />
+        </div>
+        <div class="form-group d-inline">
+          <label>Libre
+            <input type="radio" name="figurasG" id="figuraG1" />
+          </label>
+          <label>Linea
+            <input type="radio" name="figurasG" id="figuraG2" />
+          </label>
+          <label>Cuadrado/Rectangulo
+            <input type="radio" name="figurasG" id="figuraG3" />
+          </label>
+        </div>
+      </div>
+
+      <div class="col-6">
+          <div class="form-group">
+              <input class="btn btn-dark" type="button" value="Limpiar" id="boton_limpiar" />
+              <input class="btn btn-dark" type="button" value="Deshacer" id="boton_deshacer" />
+              <input class="btn btn-dark" type="button" value="Rehacer" id="boton_rehacer" />
+            </div>
+    </div>
+        
+    </div>
+  </div>
+  <script src="jquery-3.3.1.slim.min.js"></script>
+  <script src="popper.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="tablero.js">
+  </script>
+</body>
+
+</html>
